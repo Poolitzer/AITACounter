@@ -48,7 +48,7 @@ def comment(item):
         message = f"Hey, {result_message(results)}\n\n[Get an updated version of this](https://np.reddit.com/message/" \
                   f"compose/?to=AITACounter&message={results[3]}&subject=Doesn't+matter)|[learn more about me]" \
                   f"(https://www.reddit.com/user/AITACounter/comments/dm9580/about_me/)|" \
-                  f"[look at my source](https://github.com)\n---------|----------|----------"
+                  f"[look at my source](https://github.com/Poolitzer/AITACounter)\n---------|----------|----------"
     else:
         message = f"Hey, I'm sorry, but your request wasn't valid. To learn more about when it is, please head " \
                   f"[over here](https://www.reddit.com/user/AITACounter/comments/dm9580/about_me/)"
