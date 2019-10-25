@@ -7,7 +7,7 @@ import logging
 from helpers import get_id_from_link, result_message
 from post import return_votes
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, filename="log.log")
 
 
 async def inbox(item):
