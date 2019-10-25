@@ -19,12 +19,12 @@ def return_votes(reddit, post_id):
     for top_level_comment in post.comments:
         if isinstance(top_level_comment, MoreComments):
             continue
-        # wth is going on here
-        if not top_level_comment.author.id:
-            print(vars(top_level_comment))
-            continue
         # escaping automod
-        if top_level_comment.author.id == "6l4z3":
+        try:
+            if top_level_comment.author.id == "6l4z3":
+                continue
+        except AttributeError:
+            # means the comment is deleted
             continue
         vote = re.search("|".join(abbreviations), top_level_comment.body)
         if vote:
